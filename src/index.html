@@ -12,47 +12,126 @@
 
   <div class="max-w-screen mx-auto p-6">
     <!-- Navbar -->
-    <nav class="flex justify-between items-center py-4">
+    <nav class="flex justify-between items-center py-4 relative cursor-pointer">
       <span class="text-xl font-bold tracking-wide modeling-logo">ELV</span>
 
-      <div class="hidden md:flex items-center">
-        <!-- Links -->
-        <div class="flex space-x-6">
-          <a href="#" class="hover:underline">Models </a>
-          <a href="#" class="hover:underline">Calendar</a>
-          <a href="#" class="hover:underline">Home</a>
-          <a href="#" class="hover:underline">About Us</a>
+      <div class="hidden md:flex items-center space-x-6">
+        <!-- Models Dropdown -->
+        <div class="relative">
+          <button id="models-btn" class="flex items-center gap-1 hover:underline cursor-pointer">
+            Models
+            <svg class="w-4 h-4 transition-transform duration-300" id="dropdown-icon" fill="currentColor"
+              viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+
+          <!-- Dropdown Menu -->
+          <ul id="dropdown-menu"
+            class="absolute left-0 mt-2 w-48 bg-gray-700 rounded-xl shadow-lg py-2 text-center text-white opacity-0 invisible transition-all duration-300 z-10">
+            <li class="px-4 py-2 hover:bg-gray-600 cursor-pointer">Digital & Influencer</li>
+            <li class="px-4 py-2 hover:bg-gray-600 cursor-pointer">Specialized</li>
+            <li class="px-4 py-2 hover:bg-gray-600 cursor-pointer">Commercial</li>
+            <li class="px-4 py-2 hover:bg-gray-600 cursor-pointer">Fashion</li>
+          </ul>
+
         </div>
-        <!-- Login with extra spacing -->
+
+        <!-- Other Links -->
+        <a href="#" class="hover:underline">Calendar</a>
+        <a href="#" class="hover:underline">Home</a>
+        <a href="#" class="hover:underline">About Us</a>
+
+        <!-- Login -->
         <a href="#" class="hover:underline ml-24">Log In</a>
       </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="text-center fade-in">
-      <h1 class=" text-gray-300 drop-shadow-lg brand-logo">
+      <h1 class="text-gray-300 drop-shadow-lg brand-logo">
         Aura
       </h1>
-      <p class="text-2xl text-gray-400 -mt-28 brand-sub animate-fadeIn delay-500 ">
+      <p class="text-2xl text-gray-400 -mt-28 brand-sub animate-fadeIn delay-500">
         More Than a Model, It's an Aura
       </p>
+
       <!-- Image Gallery -->
-      <div class="mt-16 flex justify-center gap-6 fade-in">
-        <div class="rounded-2xl overflow-hidden bg-gray-800 p-2 shadow-lg">
-          <img src="https://via.placeholder.com/200x300" alt="Model 1" class="rounded-lg">
+      <div class="mt-16 flex justify-center gap-24 fade-in">
+        <div class="rounded-2xl overflow-hidden shadow-lg h-[438px] w-[314px]">
+          <img src="images/1.jpg" alt="Model 1" class="h-full w-full object-cover">
         </div>
-        <div class="rounded-2xl overflow-hidden bg-gray-800 p-2 shadow-lg">
-          <img src="https://via.placeholder.com/200x300" alt="Model 2" class="rounded-lg">
+        <div class="rounded-2xl overflow-hidden shadow-lg h-[438px] w-[314px]">
+          <img src="images/2.jpg" alt="Model 2" class="h-full w-full object-cover">
         </div>
-        <div class="rounded-2xl overflow-hidden bg-gray-800 p-2 shadow-lg">
-          <img src="https://via.placeholder.com/200x300" alt="Model 3" class="rounded-lg grayscale">
+        <div class="rounded-2xl overflow-hidden shadow-lg h-[438px] w-[314px]">
+          <img src="images/3.jpg" alt="Model 3" class="h-full w-full object-cover grayscale">
         </div>
-        <div class="rounded-2xl overflow-hidden bg-gray-800 p-2 shadow-lg">
-          <img src="https://via.placeholder.com/200x300" alt="Model 4" class="rounded-lg">
+        <div class="rounded-2xl overflow-hidden shadow-lg h-[438px] w-[314px]">
+          <img src="images/4.jpg" alt="Model 4" class="h-full w-full object-cover">
         </div>
       </div>
     </section>
+
+    <!-- Digital & Influencer Models Section -->
+    <section class="mt-52 max-w-screen">
+      <h2 class="text-4xl font-semibold text-white text-left modeling-logo">Digital & Influencer Models</h2>
+      <div class="mt-8 flex justify-between gap-8">
+        <!-- Model Card 1 -->
+        <div class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden w-[310px] text-white">
+          <img src="images//Commercial/4.png" alt="Aria Solène" class="w-full h-[636px] object-cover">
+          <div class="p-4 text-center">
+            <h3 class="text-xl font-semibold">Aria Solène 5'7</h3>
+            <p class="text-sm">Weight: 119 lbs (54 kg)</p>
+            <p class="text-sm">Bust: 32" (81 cm)</p>
+            <p class="text-sm">Waist: 23" (58 cm)</p>
+            <p class="text-sm">Hips: 34" (86 cm)</p>
+          </div>
+        </div>
+        <!-- Model Card 2 -->
+        <div class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden w-[310px] text-white">
+          <img src="images/Specialized/5.png" alt="Zara Noelle" class="w-full h-[636x] object-cover">
+          <div class="p-4 text-center">
+            <h3 class="text-xl font-semibold">Zara Noelle 5'5</h3>
+            <p class="text-sm">Weight: 130 lbs (59 kg)</p>
+            <p class="text-sm">Bust: 34" (86 cm)</p>
+            <p class="text-sm">Waist: 25" (63 cm)</p>
+            <p class="text-sm">Hips: 36" (91 cm)</p>
+          </div>
+        </div>
+        <!-- Model Card 3 -->
+        <div class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden w-[310px] text-white">
+          <img src="images/D&I Models/6.png" alt="Luna Everleigh" class="w-full h-[636px] object-cover">
+          <div class="p-4 text-center">
+            <h3 class="text-xl font-semibold">Luna Everleigh 5'8</h3>
+            <p class="text-sm">Weight: 125 lbs (57 kg)</p>
+            <p class="text-sm">Bust: 33" (84 cm)</p>
+            <p class="text-sm">Waist: 24" (61 cm)</p>
+            <p class="text-sm">Hips: 35" (89 cm)</p>
+          </div>
+        </div>
+        <!-- Model Card 4 -->
+        <div class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden w-[310px] text-white">
+          <img src="images/Fashion/7.png" alt="Sienna Vaughn" class="w-full h-[636px] object-cover">
+          <div class="p-4 text-center">
+            <h3 class="text-xl font-semibold">Sienna Vaughn 5'9</h3>
+            <p class="text-sm">Weight: 124 lbs (56 kg)</p>
+            <p class="text-sm">Bust: 33" (84 cm)</p>
+            <p class="text-sm">Waist: 24.5" (62 cm)</p>
+            <p class="text-sm">Hips: 35.5" (90 cm)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </div>
+
+  <!-- JavaScript -->
+  <script src="script.js">
+
+  </script>
 
 </body>
 
