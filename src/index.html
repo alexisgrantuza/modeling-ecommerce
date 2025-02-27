@@ -76,88 +76,122 @@
     </section>
 
     <!-- Digital & Influencer Models Section -->
-    <section class="mt-52 max-w-screen">
-      <h2 class="text-4xl font-semibold text-white text-left modeling-logo">
-        Digital & Influencer Models
-      </h2>
-      <div class="mt-8 flex justify-between gap-8">
-        <!-- Model Card -->
-        <div class="group rounded-[51px] shadow-lg overflow-hidden w-[310px] h-[800px] relative cursor-pointer">
-          <img src="images/Commercial/4.png" alt="Aria Solène"
-            class="w-full h-[636px] object-cover transition-transform duration-500 group-hover:translate-y-10 rounded-[51px]">
-          <div
-            class="p-4 text-center bg-[#D9D9D9] text-black absolute w-full rounded-t-[51px] h-[445px] top-[70%] flex flex-col gap-y-5">
-            <h3 class="text-xl font-semibold">Aria Solène 5'7</h3>
-            <p class="text-sm">Weight: 119 lbs (54 kg)</p>
-            <p class="text-sm">Bust: 32" (81 cm)</p>
-            <p class="text-sm">Waist: 23" (58 cm)</p>
-            <p class="text-sm">Hips: 34" (86 cm)</p>
-          </div>
-        </div>
-
-        <!-- Repeat for other models -->
-        <div class="group rounded-[51px] shadow-lg overflow-hidden w-[310px] h-[800px] relative cursor-pointer">
-          <img src="images/Specialized/5.png" alt="Zara Noelle"
-            class="w-full h-[636px] object-cover transition-transform duration-500 group-hover:translate-y-10 rounded-[51px]">
-          <div
-            class="p-4 text-center bg-[#D9D9D9] text-black absolute w-full rounded-t-[51px] h-[445px] top-[70%] flex flex-col gap-y-5">
-            <h3 class="text-xl font-semibold">Zara Noelle 5'5</h3>
-            <p class="text-sm">Weight: 130 lbs (59 kg)</p>
-            <p class="text-sm">Bust: 34" (86 cm)</p>
-            <p class="text-sm">Waist: 25" (63 cm)</p>
-            <p class="text-sm">Hips: 36" (91 cm)</p>
-          </div>
-        </div>
-
-        <div class="group rounded-[51px] shadow-lg overflow-hidden w-[310px] h-[800px] relative cursor-pointer">
-          <img src="images/D&I Models/6.png" alt="Luna Everleigh"
-            class="w-full h-[636px] object-cover transition-transform duration-300 group-hover:translate-y-10">
-          <div
-            class="p-4 text-center bg-[#D9D9D9] text-black absolute w-full rounded-t-[51px] h-[445px] top-[70%] flex flex-col gap-y-5">
-            <h3 class="text-xl font-semibold">Luna Everleigh 5'8</h3>
-            <p class="text-sm">Weight: 125 lbs (57 kg)</p>
-            <p class="text-sm">Bust: 33" (84 cm)</p>
-            <p class="text-sm">Waist: 24" (61 cm)</p>
-            <p class="text-sm">Hips: 35" (89 cm)</p>
-          </div>
-        </div>
-
-        <div class="group rounded-[51px] shadow-lg overflow-hidden w-[310px] h-[800px] relative cursor-pointer">
-          <img src="images/Fashion/7.png" alt="Sienna Vaughn"
-            class="w-full h-[636px] object-cover transition-transform duration-500 group-hover:translate-y-10 rounded-[51px]">
-          <div
-            class="p-4 text-center bg-[#D9D9D9] text-black absolute w-full rounded-t-[51px] h-[445px] top-[70%] flex flex-col gap-y-5">
-            <h3 class="text-xl font-semibold">Sienna Vaughn 5'9</h3>
-            <p class="text-sm">Weight: 124 lbs (56 kg)</p>
-            <p class="text-sm">Bust: 33" (84 cm)</p>
-            <p class="text-sm">Waist: 24.5" (62 cm)</p>
-            <p class="text-sm">Hips: 35.5" (90 cm)</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Us  -->
-    <section class="about-section">
-      <div class="left-section">
-          <img src="images/5.png" alt="Fashion Model">
-      </div>
-      <div class="right-section">
-          <h2 class="vertical-text">About Us</h2>
-          <div class="content">
-              <p>
-                  ELLEVA Talent is a premier modeling and talent agency dedicated to discovering, nurturing, and elevating exceptional talent in the fashion, commercial, and digital industries.
-                  With a strong emphasis on diversity, innovation, and professionalism, we connect world-class models and influencers with top brands, designers, and creative projects.<br>
-                  From runway and editorial shoots to influencer marketing and digital campaigns, ELLEVA Talent provides a seamless platform for talent to shine.
-                  Whether you're a brand seeking the perfect representation or a model looking to take your career to the next level, ELLEVA is where elegance meets excellence.
-              </p>
-              <p class="tagline">
-                  Elevate. Empower. ELLEVA.
-              </p>
+    <section class="max-w-[90rem] mx-auto px-4 mt-52 digital-section">
+      <h2 class="text-4xl font-semibold text-white text-left modeling-logo">Digital & Influencer Models</h2>
+      <div class="mt-8 flex justify-between gap-8 overflow-hidden" id="modelContainer">
+        <!-- Model Cards -->
+        <div class="model-card cursor-pointer" data-index="1" onclick="selectModel(this, 'images/Commercial/4.png', 'Aria Solène', '5\'7', '119 lbs', '34', '23', '34', ['images/Commercial/4.1.png', 'images/Commercial/lips.png', 'images/Commercial/Coperni.png', 'images/Commercial/rhode.png', 'images/Commercial/skims.png']
+          )">
+          <div class="group rounded-[51px] shadow-lg overflow-hidden w-[310px] h-[800px] relative cursor-pointer">
+            <img src="images/Commercial/4.png" alt="Aria Solène"
+              class="w-full h-[636px] object-cover transition-transform duration-500 group-hover:translate-y-10  rounded-[51px]">
+            <div
+              class="p-4 text-center bg-[#1B1B1B] text-white absolute w-full rounded-t-[51px] h-[445px] top-[70%] flex flex-col gap-y-5">
+              <h3 class="text-xl font-semibold">Luna Everleigh 5'8</h3>
+              <p class="text-sm">Weight: 125 lbs (57 kg)</p>
+              <p class="text-sm">Bust: 33" (84 cm)</p>
+              <p class="text-sm">Waist: 24" (61 cm)</p>
+              <p class="text-sm">Hips: 35" (89 cm)</p>
             </div>
+          </div>
         </div>
-      </section>
+        <div class="model-card cursor-pointer" data-index="2" onclick="selectModel(this, 'images/Specialized/5.png', 'Zara Noelle', '5\'5', '130 lbs', '34', ' 25', '36', ['images/Specialized/beach.png', 'images/Specialized/lips.png', 'images/Specialized/north.png', 'images/Specialized/alo.png', 'images/Specialized/zara.png']
+          )">
+          <div class="group rounded-[51px] shadow-lg overflow-hidden w-[310px] h-[800px] relative cursor-pointer">
+            <img src="images/Specialized/5.png" alt="Zara Noelle"
+              class="w-full h-[636px] object-cover transition-transform duration-500 group-hover:translate-y-10 rounded-[51px]">
+            <div
+              class="p-4 text-center bg-[#1B1B1B] text-white absolute w-full rounded-t-[51px] h-[445px] top-[70%] flex flex-col gap-y-5">
+              <h3 class="text-xl font-semibold">Luna Everleigh 5'8</h3>
+              <p class="text-sm">Weight: 125 lbs (57 kg)</p>
+              <p class="text-sm">Bust: 33" (84 cm)</p>
+              <p class="text-sm">Waist: 24" (61 cm)</p>
+              <p class="text-sm">Hips: 35" (89 cm)</p>
+            </div>
+          </div>
+        </div>
+        <div class="model-card cursor-pointer" data-index="3"
+          onclick="selectModel(this, 'images/D&IModels/6.png', 'Luna Everleigh', '5\'8', '125 lbs', '33', '24', '35', ['images/D&IModels/pose.png', 'images/D&IModels/eyes.png', 'images/D&IModels/muglep.png', 'images/D&IModels/zara.png', 'images/D&IModels/miu.png'] )">
+          <div class="group rounded-[51px] shadow-lg overflow-hidden w-[310px] h-[800px] relative cursor-pointer">
+            <img src="images/D&IModels/6.png" alt="Luna Everleigh"
+              class="w-full h-[636px] object-cover transition-transform duration-500 group-hover:translate-y-10 rounded-[51px]">
+            <div
+              class="p-4 text-center bg-[#1B1B1B] text-white absolute w-full rounded-t-[51px] h-[445px] top-[70%] flex flex-col gap-y-5">
+              <h3 class="text-xl font-semibold">Luna Everleigh 5'8</h3>
+              <p class="text-sm">Weight: 125 lbs (57 kg)</p>
+              <p class="text-sm">Bust: 33" (84 cm)</p>
+              <p class="text-sm">Waist: 24" (61 cm)</p>
+              <p class="text-sm">Hips: 35" (89 cm)</p>
+            </div>
+          </div>
+        </div>
+        <div class="model-card cursor-pointer" data-index="4"
+          onclick="selectModel(this, 'images/Fashion/7.png', 'Sienna Vaughn', '5\'9', '124 lbs', '33', '24.5', '35.5', ['images/Fashion/pose.png', 'images/Fashion/eye.png', 'images/Fashion/saint.png', 'images/Fashion/levi.png', 'images/Fashion/celine.png'] )">
+          <div class="group rounded-[51px] shadow-lg overflow-hidden w-[310px] h-[800px] relative cursor-pointer">
+            <img src="images/Fashion/7.png" alt="Sienna Vaughn"
+              class="w-full h-[636px] object-cover transition-transform duration-500 group-hover:translate-y-10 rounded-[51px]">
+            <div
+              class="p-4 text-center bg-[#1B1B1B] text-white absolute w-full rounded-t-[51px] h-[445px] top-[70%] flex flex-col gap-y-5">
+              <h3 class="text-xl font-semibold">Luna Everleigh 5'8</h3>
+              <p class="text-sm">Weight: 125 lbs (57 kg)</p>
+              <p class="text-sm">Bust: 33" (84 cm)</p>
+              <p class="text-sm">Waist: 24" (61 cm)</p>
+              <p class="text-sm">Hips: 35" (89 cm)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grid Modal -->
+      <div id="modelDetails" class="hidden fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center ">
+        <div class="grid-modal" id="modalContainer">
+          <div class="div1" id="mainImage"></div>
+          <div class="details-panel p-4 text-center bg-[#D9D9D9] text-black  w-full flex flex-col gap-y-2">
+            <h3 class="text-2xl font-bold" id="modalName"></h3>
+            <p class="mt-2">Height: <span id="modalHeight"></span></p>
+            <p>Weight: <span id="modalWeight"></span></p>
+            <p>Bust: <span id="modalBust"></span></p>
+            <p>Waist: <span id="modalWaist"></span></p>
+            <p>Hips: <span id="modalHips"></span></p>
+            <button onclick="closeModal()"
+              class="mt-4 cursor-pointer bg-gray-900 text-white px-4 py-2 rounded-full">Close</button>
+          </div>
+          <div class="div3 calendar"></div>
+          <div class="div4 model-image"></div>
+          <div class="div5 model-image "></div>
+          <div class="div6 model-image"></div>
+          <div class="div7 model-image"></div>
+          <div class="div8 model-image"></div>
+        </div>
+      </div>
+  </div>
+  </section>
+
+  <!-- About Us  -->
+  <section class="about-section">
+    <div class="left-section">
+      <img src="images/5.png" alt="Fashion Model">
     </div>
+    <div class="right-section">
+      <h2 class="vertical-text">About Us</h2>
+      <div class="content">
+        <p>
+          ELLEVA Talent is a premier modeling and talent agency dedicated to discovering, nurturing, and elevating
+          exceptional talent in the fashion, commercial, and digital industries.
+          With a strong emphasis on diversity, innovation, and professionalism, we connect world-class models and
+          influencers with top brands, designers, and creative projects.<br>
+          From runway and editorial shoots to influencer marketing and digital campaigns, ELLEVA Talent provides a
+          seamless platform for talent to shine.
+          Whether you're a brand seeking the perfect representation or a model looking to take your career to the next
+          level, ELLEVA is where elegance meets excellence.
+        </p>
+        <p class="tagline">
+          Elevate. Empower. ELLEVA.
+        </p>
+      </div>
+    </div>
+  </section>
+  </div>
 
   <!-- JavaScript -->
   <script src="script.js">
