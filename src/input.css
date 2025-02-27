@@ -221,12 +221,6 @@ a {
   background-size: 30%;
 }
 
-.details-panel {
-  padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.9);
-  color: #333;
-}
-
 footer {
   text-align: center;
   font-size: small;
